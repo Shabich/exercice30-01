@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'RedHat';
+    src: url(assets\fonts\RedHatDisplay-VariableFont_wght.ttf);
+}
+
+nav{
+    
+    position: fixed;
+    margin-right: 25px;
+
+    width: 100vw;
+    /* From https://css.glass */
+background: rgba(226, 152, 255, 0.39);
+border-radius: 50px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.5px);
+-webkit-backdrop-filter: blur(7.5px);
+}
+
+nav ul li{
+    list-style-type: none;
+
+}
+body{
+    
+    background: #0A0A27;
+    font-family: 'RedHat', sans-serif;
+    color:orchid;
+    margin:0;
+    padding:0;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 188, 253);
+    padding: 20px;
+    
+}
+.wrapper{
+    height: 70vh;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h1{
+    background-image: linear-gradient(to left, rgb(165, 255, 229), rgb(165, 145, 255), rgb(98, 255, 195));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'RedHat', sans-serif;
+    margin:0;
+    text-align: center;
+}
+
+.wrapper img{
+    margin-top: 2rem;
+    
+}
+
+.anim{
+    padding: 0;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background: #0A0A27;
+  }
+  ::-webkit-scrollbar {
+    
+    width: 15px;
+    background: #cf0dff;
+  }
+  ::-webkit-scrollbar-thumb {
+   
+    border: solid 0 transparent;
+    background-color: #ff0090;
+  }
+  .product-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+  .imageproduit{
+   
+    height: 15rem;
+ 
+    border-radius: 10px;
+  }
+  .descriptionproduit{
+    font-size: 10px;
+    color: #000000;
+  }
+  .titreproduit{
+    font-family: 'RedHat', sans-serif;
+    font-size: 20px;
+    color: #000000;
+  }
+  .produitiso{
+    background-color: #ffffff;
+    width: 25vw;
+    margin: 15px;
+    border-radius: 10px;
+    border-bottom: 1px solid #cf0dff;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    padding: 20px;
+
+  }
+  .btnpanier{
+    
+    background-color: #cf0dff;
+    border-radius: 15px;
+    padding: 5px;
+    
+
+  }
